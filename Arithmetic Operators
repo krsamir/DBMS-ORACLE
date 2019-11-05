@@ -1,0 +1,32 @@
+Dual : The dual table is a special one-row,one-column table present by default in oracle and other database installations.
+In oracle, the table has a single Varchar2(1) column called Dummy tha t has value X.
+Desc Dual;
+Operation on Dual : Select 15+10-5*5/5 from dual;
+
+example:
+CUSTOMER TABLE
+|---------------------------------------------|
+| cust_name   ||  Opening_amt   ||Receive_amt |
+|---------------------------------------------|
+| Holmes          6000            12000       |
+| Michael         2000            10000       |
+| Bolt            7000            10000       |
+|---------------------------------------------|
+
+QUERY: Display Names of peoples with sum of 'opening_amt' and  'receive_amt' is greater than 15000.
+
+SELECT CUST_NAME, OPENING_AMT, RECEIVE_AMT, (OPENING_AMT + RECEIVE_AMT) TOTAL_AMOUNT FROM CUSTOMER 
+WHERE (OPENING_AMT + RECEIVE_AMT)>15000;
+
+Aggerate commands and there function
+
+Count - Returns the number of rows with non-null values for a given column.
+Sum - Returns the sum of all values of a given column.
+Similar functions are Avg,min,max
+
+Example:
+QUERY: Display the total number of Instructors of Physics Dept.
+SELECT COUNT(*) FROM INSTRUCTOR WHERE DEPT_NAME=‘Physics’;
+
+QUERY: Display the Department name and average salary paid by instructors of each department. 
+SELECT DEPT_NAME, AVG(SALARY) FROM INSTRUCTOR GROUP BY DEPT_NAME;
