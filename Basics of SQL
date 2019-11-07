@@ -1,0 +1,4 @@
+SELECT  statement:
+The select statement is used to select data for databases.It will display all records from in the the column from the table.
+WHERE Clause:
+Where clause is used to filter records from the table.It extract only those records which fulfill a specific condition.
