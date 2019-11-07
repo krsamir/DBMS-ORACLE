@@ -1,0 +1,42 @@
+----------------------------------------------------------------
+Creating tables
+---------------
+CREATE TABLE TABLE_NAME(
+ COL 1 DATA TYPE,
+ COL 2 DATA TYPE,
+ COL 3 DATA TYPE,
+ .
+ .
+ .
+COL N DATA TYPE );
+----------------------------------------------------------------
+Insert Query
+------------
+Using insert query you can add data into a table one row 
+At a time.
+Syntax 1:
+INSERT INTO table_name(col 1,col 2,col 3,….col n)
+VALUES(val 1,val 2,val 3,…………val n) ;
+Syntax 2:
+INSERT INTO table_name
+VALUES(val 1,val 2,val 3,…………val n) ;
+Syntax 3:
+INSERT INTO table_name
+VALUES(&COLUMN 1,&COLUMN 2,…………&COLUMN n) ;
+----------------------------------------------------------------
+Creating a Table from a table
+-----------------------------
+CREATE TABLE NEW_TABLE_NAME AS 
+SELECT COLUMN 1,COLUMN 2,…..,COLUMN N
+FROM  EXISTING_TABLE_NAME;
+
+INSERT FROM ANOTHER TABLE
+Copy all columns from one table to another table:
+
+INSERT INTO NEW_TABLE SELECT * FROM EXISTING_TABLEWHERE CONDITION;
+
+Copy only some columns from one table into another table:
+INSERT INTO NEW_TABLE_NAME(COLUMN 1,
+COLUMN 2,…
+SELECT COLUMN 1,COLUMN 2,…..
+FROM EXISTING_TABLE;
