@@ -1,5 +1,5 @@
 ----------------------------------------------------------------
-Creating tables
+Creating tables								--> Creating table
 ---------------
 CREATE TABLE TABLE_NAME(
  COL 1 DATA TYPE,
@@ -10,7 +10,7 @@ CREATE TABLE TABLE_NAME(
  .
 COL N DATA TYPE );
 ----------------------------------------------------------------
-Insert Query
+Insert Query								--> Inserting Query
 ------------
 Using insert query you can add data into a table one row 
 At a time.
@@ -24,7 +24,7 @@ Syntax 3:
 INSERT INTO table_name
 VALUES(&COLUMN 1,&COLUMN 2,…………&COLUMN n) ;
 ----------------------------------------------------------------
-Creating a Table from a table
+Creating a Table from a table						--> Creating table from table
 -----------------------------
 CREATE TABLE NEW_TABLE_NAME AS 
 SELECT COLUMN 1,COLUMN 2,…..,COLUMN N
@@ -40,3 +40,39 @@ INSERT INTO NEW_TABLE_NAME(COLUMN 1,
 COLUMN 2,…
 SELECT COLUMN 1,COLUMN 2,…..
 FROM EXISTING_TABLE;
+----------------------------------------------------------------
+Updating table rows							--> Updating table row
+-------------------
+It changes or modifies data in table.
+
+UPDATE Table_name 
+SET
+Column_name = value where (condition);
+----------------------------------------------------------------
+Deleting table row							--> Deleteing table row
+------------------
+The delete query is used to delete records from table.
+
+Delete from Table_name where (condition);
+Note: It will only delete records from the table.The structure of 
+table will remain as it is.
+----------------------------------------------------------------
+Modifying the structure of table					
+--------------------------------
+Alter table allows us to change the structure of the existing table.
+ex. add,delete,modify columns datatypes
+
+Alter table table_name ADD    						--> Adding new Columns
+new_column_1 datatype(Size),
+new_column_2 datatype(Size),
+...
+
+Alter table Table_name drop column_name;				--> Dropping Column
+
+Alter table table_name Modify column_name datatype(Size);		--> Modifications in column datatype
+
+Alter table table_name rename column old_column_name To new_column_name;--> Rename column
+----------------------------------------------------------------
+Renaming and truncating tables
+------------------------------
+Rename table_name to new_table_name;					--> Renames Table
