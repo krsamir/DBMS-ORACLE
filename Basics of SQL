@@ -2,3 +2,15 @@ SELECT  statement:
 The select statement is used to select data for databases.It will display all records from in the the column from the table.
 WHERE Clause:
 Where clause is used to filter records from the table.It extract only those records which fulfill a specific condition.
+ORDER BY Keyword
+----------------
+The order by keyword is used to sort the result in ascending or descending order.
+Syntax : Select column_name from Table_name Order by column_name(in consideration) ASC|DESC;   		--> Order By
+Note : Default is ascending order.
+Select Distinct
+---------------
+The SELECT DISTINCT statement is used to return only distinct (different) values.			-->Select Distinct
+BETWEEN
+-------
+SELECT * FROM Table_name WHERE Column_name BETWEEN lower_range AND Upper_Range;				-->Between
+
