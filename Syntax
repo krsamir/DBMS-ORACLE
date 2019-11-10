@@ -76,3 +76,11 @@ Alter table table_name rename column old_column_name To new_column_name;--> Rena
 Renaming and truncating tables
 ------------------------------
 Rename table_name to new_table_name;					--> Renames Table
+Truncate Table Table_Name;        						--> Truncate Table
+It is same as Delete but the number of deleted rows cannot be returned.
+It Drops the table completely and recreates the table structure.
+Drop Table Table_name;									--> Dropping Table 
+It destroys the table from the database and cannot be recovered agan.
+Note : Truncating a table does not deletes its structure while dropping will completely
+delete or remove table from database.
+
