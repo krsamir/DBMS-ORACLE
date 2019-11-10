@@ -1,0 +1,17 @@
+MATCHING STRING PATTERN
+-----------------------
+Like
+----
+Checks whether an attributes values matches a certain string pattern.
+
+Two types of matching are there
+
+Full string matching: It uses ‘%’ 
+Ex: ‘P%’ matches ‘Peter’, ‘Pam’, ‘Pratima’
+‘%i%’ matches ‘Srinivasan’, ‘Einstein’, ‘El Said’ 
+
+One letter matching: It uses ‘_’
+Ex: ‘_ohit’ matches ‘Mohit’, ‘Rohit’, ‘Sohit’
+
+QUERY: Display details about Instructors with names starting from K.
+SELECT  * FROM INSTRUCTOR WHERE NAME LIKE ‘K%’ ;
